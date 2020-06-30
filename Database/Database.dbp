@@ -1,0 +1,31 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Database"
+   MSDTVersion = "80"
+   DefDBRef = "jupiter.MotoFeed.dbo"
+   Begin Folder = "Change Scripts"
+      Script = "Sources-AddFailedGetCount.sql"
+   End
+   Begin Folder = "Create Scripts"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "dsvr001709.MotoFeed.dbo"
+         ConnectStr = "Data Source=londonbikers.com;Initial Catalog=MotoFeed;Persist Security Info=True;User ID=Vader"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "jupiter.MotoFeed.dbo"
+         ConnectStr = "Data Source=JUPITER;Initial Catalog=MotoFeed;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Queries"
+      Script = "AO_GetAllCategories.sql"
+      Script = "AO_InsertItem.sql"
+      Script = "AO_UpdateCategory.sql"
+      Script = "AO_UpdateItem.sql"
+      Script = "AO_UpdateSource.sql"
+      Script = "Reaper_GetActiveSources.sql"
+      Script = "Reaper_IsItemNew.sql"
+   End
+End
